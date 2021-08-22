@@ -13,6 +13,17 @@
 		A439A0EE26BB6A4F0046505F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A439A0ED26BB6A4F0046505F /* Preview Assets.xcassets */; };
 		A439A0F926BB6A4F0046505F /* fridgeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439A0F826BB6A4F0046505F /* fridgeTrackerTests.swift */; };
 		A439A10426BB6A4F0046505F /* fridgeTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439A10326BB6A4F0046505F /* fridgeTrackerUITests.swift */; };
+		A45269BF26D020D20059C5C1 /* FoodInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45269BE26D020D20059C5C1 /* FoodInput.swift */; };
+		A456501B26CC5A3300FCFF22 /* foodData.json in Resources */ = {isa = PBXBuildFile; fileRef = A456501A26CC5A3300FCFF22 /* foodData.json */; };
+		A49737DB26C747F600984AFF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49737DA26C747F600984AFF /* CircleImage.swift */; };
+		A49737DD26C7499F00984AFF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49737DC26C7499F00984AFF /* MapView.swift */; };
+		A49737DF26C7504500984AFF /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = A49737DE26C7504500984AFF /* landmarkData.json */; };
+		A49737E326C750BB00984AFF /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49737E226C750BB00984AFF /* Landmark.swift */; };
+		A49737E526C751AE00984AFF /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49737E426C751AE00984AFF /* ModelData.swift */; };
+		A49737EA26C756F300984AFF /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49737E926C756F300984AFF /* LandmarkRow.swift */; };
+		A4EEEFDB26CB013B00A4613D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEEFDA26CB013B00A4613D /* LandmarkList.swift */; };
+		A4EEEFDD26CB0D5E00A4613D /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEEFDC26CB0D5E00A4613D /* LandmarkDetail.swift */; };
+		A4EEEFDF26CB2C4000A4613D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEEFDE26CB2C4000A4613D /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +56,17 @@
 		A439A0FF26BB6A4F0046505F /* fridgeTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fridgeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A439A10326BB6A4F0046505F /* fridgeTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fridgeTrackerUITests.swift; sourceTree = "<group>"; };
 		A439A10526BB6A4F0046505F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A45269BE26D020D20059C5C1 /* FoodInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInput.swift; sourceTree = "<group>"; };
+		A456501A26CC5A3300FCFF22 /* foodData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foodData.json; sourceTree = "<group>"; };
+		A49737DA26C747F600984AFF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		A49737DC26C7499F00984AFF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A49737DE26C7504500984AFF /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		A49737E226C750BB00984AFF /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		A49737E426C751AE00984AFF /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		A49737E926C756F300984AFF /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		A4EEEFDA26CB013B00A4613D /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		A4EEEFDC26CB0D5E00A4613D /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		A4EEEFDE26CB2C4000A4613D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				A439A0E626BB6A4B0046505F /* fridgeTrackerApp.swift */,
-				A439A0E826BB6A4B0046505F /* ContentView.swift */,
+				A49737E626C7530A00984AFF /* Views */,
+				A49737E726C7534900984AFF /* Model */,
+				A49737E826C7535900984AFF /* Resources */,
 				A439A0EA26BB6A4F0046505F /* Assets.xcassets */,
 				A439A0EF26BB6A4F0046505F /* Info.plist */,
 				A439A0EC26BB6A4F0046505F /* Preview Content */,
@@ -128,6 +152,55 @@
 				A439A10526BB6A4F0046505F /* Info.plist */,
 			);
 			path = fridgeTrackerUITests;
+			sourceTree = "<group>";
+		};
+		A49737E626C7530A00984AFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A439A0E826BB6A4B0046505F /* ContentView.swift */,
+				A4EEEFE126CB2CC700A4613D /* Landmarks */,
+				A4EEEFE026CB2CBE00A4613D /* Helpers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A49737E726C7534900984AFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A49737E226C750BB00984AFF /* Landmark.swift */,
+				A49737E426C751AE00984AFF /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A49737E826C7535900984AFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A49737DE26C7504500984AFF /* landmarkData.json */,
+				A456501A26CC5A3300FCFF22 /* foodData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A4EEEFE026CB2CBE00A4613D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A45269BE26D020D20059C5C1 /* FoodInput.swift */,
+				A49737DA26C747F600984AFF /* CircleImage.swift */,
+				A49737DC26C7499F00984AFF /* MapView.swift */,
+				A4EEEFDE26CB2C4000A4613D /* FavoriteButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A4EEEFE126CB2CC700A4613D /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				A49737E926C756F300984AFF /* LandmarkRow.swift */,
+				A4EEEFDA26CB013B00A4613D /* LandmarkList.swift */,
+				A4EEEFDC26CB0D5E00A4613D /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +308,8 @@
 			files = (
 				A439A0EE26BB6A4F0046505F /* Preview Assets.xcassets in Resources */,
 				A439A0EB26BB6A4F0046505F /* Assets.xcassets in Resources */,
+				A49737DF26C7504500984AFF /* landmarkData.json in Resources */,
+				A456501B26CC5A3300FCFF22 /* foodData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +335,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A439A0E926BB6A4B0046505F /* ContentView.swift in Sources */,
+				A45269BF26D020D20059C5C1 /* FoodInput.swift in Sources */,
+				A49737DD26C7499F00984AFF /* MapView.swift in Sources */,
 				A439A0E726BB6A4B0046505F /* fridgeTrackerApp.swift in Sources */,
+				A4EEEFDF26CB2C4000A4613D /* FavoriteButton.swift in Sources */,
+				A4EEEFDB26CB013B00A4613D /* LandmarkList.swift in Sources */,
+				A4EEEFDD26CB0D5E00A4613D /* LandmarkDetail.swift in Sources */,
+				A49737DB26C747F600984AFF /* CircleImage.swift in Sources */,
+				A49737E326C750BB00984AFF /* Landmark.swift in Sources */,
+				A49737EA26C756F300984AFF /* LandmarkRow.swift in Sources */,
+				A49737E526C751AE00984AFF /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

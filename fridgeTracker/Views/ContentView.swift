@@ -21,13 +21,32 @@ struct ContentView: View {
         Food(name: "Bread")
     ]
     
+    @State private var selection: Tab = .featured
+    enum Tab {
+        case featured
+        case list
+    }
+    
     var body: some View {
-        NavigationView {
+        /*NavigationView {
             List(foods) {
                 Text($0.name)
             }.navigationBarTitle(Text("Food")).navigationBarItems(
                 trailing: Button(action: addFood, label: { Text("Add") }))
-        }
+        }*/
+        TabView(selection: $selection) {
+                    LandmarkList()
+                        .tabItem {
+                            Label("Featured", systemImage: "star")
+                        }
+                        .tag(Tab.featured)
+
+            LandmarkRow(landmark: ModelData().landmarks[0])
+                        .tabItem {
+                            Label("List", systemImage: "list.bullet")
+                        }
+                        .tag(Tab.list)
+                }
     }
     
     func addFood() {
@@ -39,6 +58,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(ModelData())
     }
 }
