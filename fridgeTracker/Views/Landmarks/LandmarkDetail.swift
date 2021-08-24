@@ -41,7 +41,15 @@ struct LandmarkDetail: View {
                             
                         }.font(.subheadline)
                     .foregroundColor(.secondary)
-                        
+                    
+                    HStack {
+                        Text("Category: \(landmark.category)")
+                        Spacer()
+                        Text("Amount: \(landmark.quantity)")
+                        }.font(.subheadline)
+                    .foregroundColor(.secondary)
+                    
+                    
                     Divider()
 
                         Text("About \(landmark.name)")

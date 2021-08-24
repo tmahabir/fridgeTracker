@@ -14,15 +14,19 @@ struct Landmark: Hashable, Codable, Identifiable {
     var name: String
     var park: String
     var state: String
+    var category: String
+    var quantity: Int
     var description: String
     var isFavorite: Bool
     
-    public init(id: Int, name: String, park: String, state: String, description: String, isFavorite: Bool) {
+    public init(id: Int, name: String, park: String, state: String, category: String, quantity: Int, description: String, isFavorite: Bool) {
         self.id = id
         self.name = name
         self.park = park
         self.state = state
+        self.category = category
         self.description = description
+        self.quantity = quantity
         self.isFavorite = isFavorite
         self.imageName = "Turtle Rock"
         self.coordinates = Coordinates(latitude: 0.0, longitude: 0.0)
